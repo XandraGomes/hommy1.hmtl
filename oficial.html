@@ -1,134 +1,335 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hommy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Ficial.css">
-</head>
-<body>
-    <section>
-        <nav>
+@charset "uft-8";
+/*Corpo inicial*/
+body{
+    margin: -10;
+    padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
 
-            <!--barra de navegação --->
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 
-            <a href="#" class="logo">Hommy</a>
-            <ul>
-            <li><a href="#" class="ativar">Home</a></li>
-            <li><a href="#">Nossa história</a></li>
-            <li><a href="#">Fale conosco</a></li>
-            <li><a href="#">Login</a></li>
-            </ul>
-        </nav>
+/*imagm da Caixa do nav*/
+section{
+    width: 100%;
+    height: 95vh;
+    background-image: url("fot.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/*Caixa do nav*/
+nav{
+    margin: 20px 20px;
+    margin-bottom: 1em;
+    font: 1em;
+    box-shadow: 0px 5px 15px rgba(0, 0,0, 0.5);
+    background: rgba(225,225,225, 0.2);
+    display:flex ;
+    justify-content: right;
+    align-items: center;
+    height: 60px;
+    padding: 0px 5%;
+}
+nav ul{
+    display: flex;
+}
+
+/*letras da nav*/
+nav ul li a{
+    margin: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+/*Img logo*/
+.logo{
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    font-size: 22px;
+}
+
+/*Cor Home*/
+.ativar{
+    font-weight: bold;
+    color: seagreen;
+}
+
+/*Texto inicial da esquerda*/
+
+.text-container{
+    position: absolute;
+    left: 13%;
+    top: 20%; /* sobe ou desce a cixa do questionário*/
     
+}
 
-        <!--Texto inicial a esquerda ---->
-        <div class="text-container">
-            
-            <form action="" method="POST" enctype="multipart/form-data" class="Quetionario">
-                
-                <p class="cidade">Cidade: <input type="text" placeholder="Buscar por cidade"></p>
-            
-               <p>Bairro: <input type="text" placeholder="Buscar por bairro"></p>
-        
-                <p> Quartos: <input type="text" placeholder="N°"></p>
-        
-                <p>
-                    Gênero: <select required="required" type="text" placeholder="Com qual genero você se identifica?">
-                        <option value="" selected="selected"></option>
-                        <option value="1">Feminino</option>
-                    <option value="2">Masculino</option>
-                    <option value="3">Outro</option>
-                    </select>
-                    
-                </p>
-        
-                <p>Deficiente: <select required="required" type="text" placeholder="Com qual genero você se identifica?">
-                    <option value="" selected="selected"></option>
-                    <option value="1">Sim</option>
-                <option value="2">Não</option>
-                </select>
-                </p>
-        
-                <p>Valor Mínimo: <input type="text" placeholder="Digite o valor mínimo desejado"></p>
-                <p>Valor Máximo: <input type="text" placeholder="Digite o valor máximo desejado"></p>
-                
-                <button class="hire-btn">Pesquisar</button>
-            </form>
+.Quetionario{
+    display: inline-table;/*inline para tirar a box*/
+    margin: 20px 20px;
+    margin-bottom: 1em;
+    font: 1em;
+    box-shadow: 0px 5px 15px rgba(0, 0,0, 0.5);
+    background: rgba(225,225,225, 0.2);
+}
 
-
-            
-
-        </div>
-
-        <!--Imagem logo ---->
-        <img src="logo.png" alt="logo" class="logo">
-    </section>
-
-    <!--Explicação do funcionamento ---->
-    <div class="about-container">
-        <img src="fotod.jpg" alt="imagemcama">
-        <div class="about-text">
-            <p>jjjj</p>
-            <p>Explicação</p>
-            <p>Explicando</p>
-            <p>algo mais</p>
-            <button> cadatsro</button>
-            <button>algo mais</button>
-        </div>
-    </div>
-     <!--Serviço ---->
-    <div class="services">
-    <div class="services-text">
-        <p>serviços</p>
-        <p>contactar</p>
-        <p>texto grande falando sobre matéria doo blog</p>
-        <button class="baixar">Baixar App</button>
-    </div>
-
-    <!--box-->
-    <div class="box-container">
-        <!--box1, junto aos seu texto-->
-        <div class="box-1">
-        <p class="heading">texto</p>
-        <p class="datails">fafeniwcjnivb\wbhvovnjcmx</p>
-        </div>
-        <!--box2-->
-        <div class="box-2">
-            <p class="heading">texto</p>
-            <p class="datails">faf</p>
-        </div>
-        <!--box3-->
-        <div class="box-3">
-            <p class="heading">texto</p>
-            <p class="datails">faf</p>
-        </div>
-    </div>
-    <!--contate a gente por aqui-->
-    <div class="contact-me">
-        <p>Precisa de mais informações?</p>
-        <button>Fale conosco</button>
-    </div>
-    <!--footer-->
-    <footer>
-      <div class="main-content">
-        <div class="left box">
-            <p>Copyright by Going- To Internet</p>
-        </div>
-            
-        <div class="center-box">
-            <li><a href="#">Políticas da empresa</a></li>
-            <li><a href="#">Termos</a></li>
-            <li><a href="#" class="idiomas">Idiomas</a></li>
-        </div>
-
-        <div class="right-box">
-            <p>Hommy</p>
-        </div>
-
-      </div>
-    </footer>
+.Quetionario p:nth-child(1), .Quetionario p:nth-child(2), .Quetionario p:nth-child(3), .Quetionario p:nth-child(4), .Quetionario p:nth-child(5), .Quetionario p:nth-child(6), .Quetionario p:nth-child(7){
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 5px;
+    padding: 5px;
     
-</body>
-</html>
+}
+ input, text{
+    width: 50%;
+    padding: 10px;
+ }
+
+/*Texto botões, cor da letra e de fundo*/
+.text-container button{
+    width: 130px;
+    height: 42px;
+    border-radius: 10px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    outline: none;
+    margin: -15px 10px;
+    display: flex;
+    position: absolute;
+}
+/*caixa de commentarioa*/
+
+
+/*botão comentário*/
+.hire-btn{
+    background-color: black;
+    color: #ffffff;
+    border: none;
+}
+button:active{
+    transform: scale(1.1);
+   
+}
+/*Imagem logo*/
+.logo{
+    height: 300px;
+    position: absolute;
+    bottom: 40px;
+    left: 70%;
+    transform: translateX(-70%);
+}
+
+/*Caixa de fundo da explicação*/
+.about-container{
+    width: 80%;
+    height: 330px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px;
+    display: flex;
+    margin: 0px auto 20px auto ;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*Imagem*/
+.about-container img{
+    height: 250px;
+}
+
+/*Texto 2 explicação do funcionamento do  site*/
+.about-text{
+    width: 550px;
+}
+.about-text p:nth-child(1){
+    color:seagreen ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 5px;
+}
+.about-text p:nth-child(3), .about-text p:nth-child(2), .about-text p:nth-child(4){
+    color:gray ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 5px;
+}
+
+
+/*botão cadastro e algo mais*/
+.about-text button{
+    width: 120px;
+    height: 40px;
+    color:#ffffff;
+    outline: none;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #1dd2db;
+}
+/*Serviços texto cor da letra e de fundo*/
+.services{
+    height: 600px;
+    background-color:#127676 ;
+    padding: 2% 10% 0px 10%;
+}
+.services-text p:nth-child(1){
+    color: #2CD029;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 15px;
+}
+.services-text p:nth-child(2){
+    color: #e9f3e9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 5px;
+}
+/*cor de fundo dos serviços*/
+.services-text p:nth-child(3){
+    color: #C2F5AA;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.services-text{
+    width: 500px;
+    margin:50px 0px;
+}
+
+.services-text button{
+    width: 160px;
+    height: 40px;
+    border-radius: 10px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    outline: none;
+    margin: -15px 10px;
+    display: inline-table;
+    position: absolute;
+    right: 30%;
+    top: 165%;
+}
+.baixar{
+    background-color: #0b0b0b;
+    color: #ffffff;
+    border: none;
+}
+
+
+
+
+/*Caixa de fundo para imagens*/
+.box-1,.box-2,.box-3{
+    width: 300px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: top;
+
+}
+/*Alinhamento delas*/
+.box-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*.box-1{ bacground img: url()}*/
+
+
+/*Detalhes de cor da caixinha do blog*/
+.box-1 p:nth-child(1), .box-2 p:nth-child(1), .box-3 p:nth-child(1){
+    color: gainsboro ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: -150px;
+    
+}
+
+/*Escrita, botão no final, centralização e background da área de contato*/
+.contact-me{
+    width:100%;
+    height:280px;
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-me p{
+    color: rgb(7, 12, 7);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid seagreen;
+
+}
+.contact-me button{
+    width: 200px;
+    height: 40px;
+    background-color:#1dd2db;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+/*rodapé e suas divisões*/
+footer{
+    
+    bottom: 50px;
+    width: 100%;
+    background: whitesmoke;
+    height: 80px;
+    padding: 0px 5%;
+}
+
+.main-content{
+    display: flex;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.center-box{
+    width:100%;
+    height:80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    
+}
+.right-box{
+    width:100%;
+    height:80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+}
+
