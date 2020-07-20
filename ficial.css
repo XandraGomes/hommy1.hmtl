@@ -4,6 +4,7 @@ body{
     margin: -10;
     padding: 0;
     font-family: 'Open Sans Condensed', sans-serif;
+    background-color: rgba(149, 238, 131, 0.623);
 }
 
 ul{
@@ -15,19 +16,11 @@ a{
 
 /*imagm da Caixa do nav*/
 section{
-    width: 100%;
+    width:100%;
     height: 95vh;
-    background-image: url("fot.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
-
-/*Escrita logo*/
-.logo1{
-    font-family: 'Times New Roman', Times, serif;
-    color: #000000;
-    font-size: 22px;
 }
 
 /*Caixa do nav*/
@@ -67,22 +60,23 @@ nav ul li a{
 
 /*Texto inicial da esquerda*/
 
-.text-container{
+.questionary-container{
     position: absolute;
     left: 13%;
     top: 20%; /* sobe ou desce a cixa do questionário*/
 }
 
-.Quetionario{
+.Questionario{
     display: inline-table;/*inline para tirar a box*/
     margin: 20px 20px;
     margin-bottom: 1em;
     font: 1em;
     box-shadow: 0px 5px 15px rgba(0, 0,0, 0.5);
     background: rgba(225,225,225, 0.2);
+    border-radius: 10px;
 }
 
-.Quetionario p:nth-child(1), .Quetionario p:nth-child(2), .Quetionario p:nth-child(3), .Quetionario p:nth-child(4), .Quetionario p:nth-child(5), .Quetionario p:nth-child(6), .Quetionario p:nth-child(7){
+.Questionario p:nth-child(1), .Questionario p:nth-child(2), .Questionario p:nth-child(3), .Questionario p:nth-child(4), .Questionario p:nth-child(5), .Questionario p:nth-child(6), .Questionario p:nth-child(7){
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -96,10 +90,10 @@ nav ul li a{
  }
 
 /*Texto botões, cor da letra e de fundo*/
-.text-container button{
+.questionary-container button{
     width: 130px;
     height: 42px;
-    border-radius: 10px ;
+    border-radius: 5px ;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     font-size: 25px;
@@ -112,8 +106,8 @@ nav ul li a{
 
 
 /*botão comentário*/
-.hire-btn{
-    background-color: black;
+.share-btn{
+    background-color: rgba(0, 0, 0, 0.89);
     color: #ffffff;
     border: none;
 }
@@ -125,13 +119,13 @@ button:active{
 .logo{
     
     position: absolute;
-    bottom: 40px;
+    bottom: 60px;
     left: 80%;
     transform: translateX(-70%);
 }
 
 /*Caixa de fundo da explicação*/
-.about-container{
+.about-us{
     width: 80%;
     height: 330px;
     background-color: #ffffff;
@@ -144,22 +138,22 @@ button:active{
     align-items: center;
 }
 /*Imagem*/
-.about-container img{
+.about-us img{
     height: 250px;
 }
 
 /*Texto 2 explicação do funcionamento do  site*/
-.about-text{
+.history{
     width: 550px;
 }
-.about-text p:nth-child(1){
+.history p:nth-child(1){
     color:seagreen ;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     font-size: 30px;
     line-height: 5px;
 }
-.about-text p:nth-child(3), .about-text p:nth-child(2), .about-text p:nth-child(4){
+.history p:nth-child(3), .history p:nth-child(2), .history p:nth-child(4){
     color:gray ;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
@@ -169,7 +163,7 @@ button:active{
 
 
 /*botão cadastro e algo mais*/
-.about-text button{
+.history button{
     width: 120px;
     height: 40px;
     color:#ffffff;
@@ -179,19 +173,19 @@ button:active{
     background-color: #1dd2db;
 }
 /*Serviços texto cor da letra e de fundo*/
-.services{
+.servicesapp{
     height: 600px;
     background-color:#127676 ;
     padding: 2% 10% 0px 10%;
 }
-.services-text p:nth-child(1){
+.servicesapp-text p:nth-child(1){
     color: #2CD029;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     font-size: 30px;
     line-height: 15px;
 }
-.services-text p:nth-child(2){
+.servicesapp-text p:nth-child(2){
     color: #e9f3e9;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
@@ -199,16 +193,16 @@ button:active{
     line-height: 5px;
 }
 /*cor de fundo dos serviços*/
-.services-text p:nth-child(3){
+.servicesapp-text p:nth-child(3){
     color: #C2F5AA;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.services-text{
+.servicesapp-text{
     width: 500px;
     margin:50px 0px;
 }
 
-.services-text button{
+.servicesapp-text button{
     width: 160px;
     height: 40px;
     border-radius: 10px ;
@@ -222,7 +216,7 @@ button:active{
     right: 30%;
     top: 165%;
 }
-.baixar{
+.donwloand{
     background-color: #0b0b0b;
     color: #ffffff;
     border: none;
@@ -242,8 +236,9 @@ button:active{
     align-items: center;
     flex-direction: column;
     justify-content: top;
-    color: white;
+    color: #1dd2db;
     margin: 0px auto 20px auto ;
+    border-radius: 20px;
 
 }
 /*Alinhamento delas*/
